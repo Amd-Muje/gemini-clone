@@ -90,13 +90,13 @@ const Main = () => {
 							placeholder="Enter a promt Here"
 						/>
 						<div>
-							<ImagesIcon className="searchbar-icon" size={32} />
-							<MicrophoneIcon className="searchbar-icon" size={32} />
-							<PaperPlaneRightIcon
+							<ImagesIcon className="searchbar-icon" />
+							<MicrophoneIcon className="searchbar-icon"  />
+							{input? <PaperPlaneRightIcon
 								onClick={() => onSent()}
 								className="searchbar-icon"
-								size={32}
-							/>
+								
+							/> :null}
 						</div>
 					</div>
 					<p className="bottom-info">
